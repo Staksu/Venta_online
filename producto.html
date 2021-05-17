@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+    <link rel="stylesheet" href="CSS/animacion.css">
+    <script src="Scripts/Script.js"></script>
+    <title>BrandQub</title>
+</head>
+<body>
+    <!--El navbar es una sección que contiene los enlaces de navegación-->
+    <nav class="fadeInDown">
+        <!--No poner ñ ni acentos, esto puede generar error en nuestras clases
+        la clase="brand_image" es un grupo, todas las modificaciones que hagamos se haran en grupo, por eso,
+        al aplicar el jusstify-content: space-between en nuestra hoja de estilos, nos va a modificar nuestros elementos en grupo y no uno por uno-->
+        <div class="brand_image">
+            <img src="Images/BrandQub (2).png" alt="">
+        </div>
+
+        <!--la clase="nav_option" es un grupo, todas las modificaciones que hafamos se haran en grupo, por eso,
+        al a    plicar el jusstify-content: space-between en nuestra hoja de estilos, nos va a modificar nuestros elementos en grupo y no uno por uno-->
+        <div class="nav_option">
+            <!--ul y li son un formato lista
+            -->
+            <ul>
+                <!--Creamos un link dentro de nuestras listas. Esto se hace para que nuestra lista sea o mas parecido a un boton
+                con eso, cuando demos clic en nuestras listas, nos direccione hacia donde nosotros le hayamos indicado-->
+                <li><a href="#">Faqs</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Aquí termina el navbar-->
+
+    <!--El sistema de grillas tiene un contenedor, que es donde va a almacenar todas las grillas de mi página-->
+    <div class="contenedor">
+        <h1>Productos / Descripción</h1>
+        <br><br>
+        <!--Dentro de row, es donde empiezan a existir mis columnas (sistema d grillas)-->
+        <div class="row">
+            <!--Las grillas (o columnas) cuando las seleccione dentro de mi row, tiene que sumar 12 (ya que es el número de columnas que use para
+                crear mi sistema de grillas), ejemplo, col-4 + col-8 = col-12-->
+            <div class="col-4">
+                <img src="Images/Producto/3x3.png" alt="">
+            </div>
+
+            <!--Las grillas (o columnas) cuando las seleccione dentro de mi row, tiene que sumar 12 (ya que es el número de columnas que use para
+                crear mi sistema de grillas), ejemplo, col-4 + col-8 = col-12-->
+            <div class="col-8">
+                <h1>Producto 1</h1>
+                <p class="parrafo">
+                    Profesional y excelente rendimiento, con un gran corte en las esquinas, el control de la tensión es ajustable, fácil,
+                    con etiquetas engomadas antirresbaladizo. Comodo y conveniente para jugar con: Toque suave y buen corte de esquinas 
+                    para facilitar la torsión.
+                </p>
+            </div>
+        </div>
+
+        <!--Dentro de row, es donde empiezan a existir mis columnas (sistema d grillas)-->
+        <div class="row">
+            <!--Las grillas (o columnas) cuando las seleccione dentro de mi row, tiene que sumar 12 (ya que es el número de columnas que use para
+                crear mi sistema de grillas), ejemplo, col-4 + col-8 = col-12-->
+            <div class="col-8">
+                <h1>Producto 1</h1>
+                <p class="parrafo">
+                    Profesional y excelente rendimiento, con un gran corte en las esquinas, el control de la tensión es ajustable, fácil,
+                    con etiquetas engomadas antirresbaladizo. Comodo y conveniente para jugar con: Toque suave y buen corte de esquinas 
+                    para facilitar la torsión.
+                </p>
+            </div>
+
+            <!--Las grillas (o columnas) cuando las seleccione dentro de mi row, tiene que sumar 12 (ya que es el número de columnas que use para
+                crear mi sistema de grillas), ejemplo, col-4 + col-8 = col-12-->
+            <div class="col-4">
+                <img src="Images/Producto/4x4.png" alt="">
+            </div>
+        </div>
+
+        <!--Dentro de row, es donde empiezan a existir mis columnas (sistema d grillas)-->
+        <div class="row">
+            <!--Las grillas (o columnas) cuando las seleccione dentro de mi row, tiene que sumar 12 (ya que es el número de columnas que use para
+                crear mi sistema de grillas), ejemplo, col-4 + col-8 = col-12-->
+            <div class="col-4">
+                <img src="Images/Producto/3x3 (1).png" alt="">
+            </div>
+
+            <!--Las grillas (o columnas) cuando las seleccione dentro de mi row, tiene que sumar 12 (ya que es el número de columnas que use para
+                crear mi sistema de grillas), ejemplo, col-4 + col-8 = col-12-->
+            <div class="col-8">
+                <h1>Producto 1</h1>
+                <p class="parrafo">
+                    Profesional y excelente rendimiento, con un gran corte en las esquinas, el control de la tensión es ajustable, fácil,
+                    con etiquetas engomadas antirresbaladizo. Comodo y conveniente para jugar con: Toque suave y buen corte de esquinas 
+                    para facilitar la torsión.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Aquí empieza el footer-->
+    <footer class="apartadoFinal">
+        <div class="condiciones">
+            <ul>
+                <li><a href="condiciones.html">Terminos y condiciones</a></li>
+            </ul>
+        </div>
+        
+        <div class="contactos">
+            <ul>
+                <li><a href="#">+57 315 588 8554</a></li>
+                <li><a href="mailto:sebasdiaz19@gmail.com">sebasdiaz19@gmail.com</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--Aquí termina el footer-->
+</body>
+</html>

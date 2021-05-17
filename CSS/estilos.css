@@ -1,0 +1,415 @@
+
+/*-----------------------Variables*/
+
+
+/*:root sirve para conectar variables dentro de nuestros CSS, cuando tenemos elementos que se repiten a la hora,
+de darles un diseño*/
+:root{
+/*------------------------Colores*/
+
+
+    /*Guardamos dentro de la variable --green-color el color verde de nuestro diseño*/
+    --green-color: #7ACC2D;
+    /*Guardamos dentro de la variable --white-color el color blanco de nuestro diseño*/
+    --white-color: white;
+    /*Guardamos dentro de la variable --black-color el color negro de nuestro diseño*/
+    --black-color: black;
+    /*El box sirve para */
+    --box: 0 0 4px 2px #e6e5e9;
+
+
+/*------------------------Tamaño de la fuente*/
+
+    /*Guardamos el tamaño de la fuente, que va a ser de 20px*/
+    --fuente2: 20px;
+    /*Guardamos el tamaño de la fuente, que va a ser de 25px*/
+    --fuente2_5: 25px;
+    /*Guardamos el tamaño de la fuente, que va a ser de 28px*/
+    --fuente2_8: 28px;
+
+
+/*------------------------Espaciado interno*/
+
+    /*Guardamos el espaciado interno en a variable space-interno1 de nuestro diseño*/
+    --space-interno1: 10px;
+    /*Guardamos el espaciado interno en a variable space-interno2 de nuestro diseño*/
+    --space-interno2: 20px;
+
+
+/*-----------------------Espaciado externo*/
+
+
+    /*Aquí guardaremos el expaciado externo dentro de la variable --space-externo1*/
+    --space-externo1: 20px;
+}
+
+
+/*Le daremos estilo al html y al body de nuestro documento hhtml*/
+html,body{
+    /*Es bueno quitar el paddin y el margin que hay por defecto y ponerlo en 0, 
+    paddin: Es el espaciado hacia dentro*/
+    padding: 0px;
+    /*margin: Es el espaciado hacia fuera*/
+    margin: 0px;
+    /*Darle tamaño de nuestro texto*/
+    font-size: 12px;
+    /*Darle la fuente a nuestro texto*/
+    font-family: 'Segoe UI';
+}
+
+/*le daremos diseño a nuestro navbar*/
+nav{
+     /*flex: Me ayuda a pasar mis elementos de forma vertical a horizontal*/
+    display: flex;
+    /*Sirve para darle el color de fondo a mi navbar*/
+    background-color: var(--green-color);
+    /*Damos el espaciado de 10px hacia dentro de todo lo que este dentro de nuestro navbar*/
+    padding: var(--space-interno1);
+    /*Darle color a nuestro texto dentro del navbar*/
+    color: var(--white-color);
+    /*Sirve para separar mis elementos dentro de mi navbar*/
+    justify-content: space-between;
+    /*Sirve para alinear hacia el centro nuestros elementos de forma vertical*/
+    align-items: center;
+} 
+
+/*Vamos a darle diseño a todos los <ul>(formato lista), que estan dentro de nuestra <nav>(navbar)*/
+nav ul{
+    /*flex: Me ayuda a pasar mis elementos de forma vertical a horizontal*/ 
+    display: flex;
+}
+
+/*Vamos a darle diseño a todos los <li>(formatos lista), que estan dentro de nuestra <nav>(navbar)*/
+nav li{
+    /*Damos el espaciado interno a la izquierda de 20px de todo lo que este dentro de nuestro navbar*/
+    padding-left: var(--space-interno2);
+    /*Establece un marcador para los elementos de la lista, sin hacer que dejen de ser una lista. En este caso, me va a 
+    quitar los puntos que pone por defecto al crear la lista*/
+    list-style: none;
+}
+
+/*Vamos a darle diseño a nuestro vínculo <a>, el cual edentro de nuestra lista <li>, cuya lista estra dentro de nuestra <nav>*/
+nav li a{
+    /*Sirve para darle color a nuestros textos*/
+    color: var(--black-color);
+    /*Se utiliza con los enlaces, y sirve para ocultar el subrayado que muestran por defecto los enlaces*/
+    text-decoration: none;
+}
+
+/*La pseudo clase :hover se usa para crear efectos cuando pasamos el puntero encima de nuestros enlaces o botones*/
+nav li a:hover{
+    /*Definimos el color que van a tener nuestros links cuando pongamos encima de nuestros links el cursor del mouse*/
+    color: var(--white-color);
+}
+
+
+/*------------------- Main section */
+
+
+/*Vamos a darle diseño a nuestro main_section*/
+.main_section{
+    /*Damos un tamaño a la fuente de 20px*/
+    font-size: var(--fuente2);
+    /*Damos un espaciado interno  de 20 pixeles a nuestro main section*/
+    padding: var(--space-interno2);
+    /*Damos un espaciado hacia afuera a nuestro main_section de 120px*/
+    margin: 110px;
+    /*Con text-align alineamos nuestro tenxto (o imagen para este caso) a algún lado de nuestro
+    contenedor. Para este caso, que se alinie al centro de nuestro contenedor*/
+    text-align: center;
+}
+
+/*Vamos a darle diseño a nuestro producto que esta en nuestro main_section*/
+.productos{
+    /*Con esto podemos traer una imagen dentro de nuestro CSS
+    Los ../ sirven para regresar un lugar hacia afuera, de donde esta nuestro CSS para poder acceder
+    a nuestra carpeta Image*/
+    background-image: url("../Images/Curva.png");
+    /*Con height le damos altura a nuestra imagen*/
+    height: 50px;
+    /*Sirve para que la imagen ocupe el tamaño  del div que tiene*/
+    background-size: cover;
+    /*Modificamos la posición de nuestra imagen, hacía el centro y arriba*/
+    background-position: center top;
+    /*Damos un espaciado interno del 15% a nuestra imagen, la cual se almacena dentro de nuestra sección
+    productos*/
+    padding: 15%;
+    /*flex: Me ayuda a pasar mis elementos de forma vertical a horizontal, para el caso de mis tarjetas*/
+    display: flex;
+}
+
+
+/*Vamos a hacer que la sección producto, tenga su propio padding. Esto es para la separación entre mis tarjetas y el espaciado 
+interno que va a ocupar dentro de mi imagen las dos tarjetas*/
+.producto{
+    /*Le damos un espaciado interno de 10px a nuestra sección producto para que se diferencie de nuestras tarjetas*/
+    padding: var(--space-interno1);
+    /*Con margin-top establecemos el área de margen en la parte superior de nuestro elemento, ya sea de forma negativa o positiva.*/
+    margin-top: -250px;
+}
+
+/*Vamos a darle su propio diseño al contenedor que esa dentro de la sección de producto*/
+.producto .content{
+    /*Le damos el color de fondo a nuestras tarjetas creadas*/
+    background-color: var(--white-color);
+    /*Le damos un espaciado interno de 20px a nuestras dos tarjetas que estan dentro del contenr, el cual
+    esta almacenado dentro de la sección producto*/
+    padding: 15px;
+    /*Sirve para añadir sombras a diferentes elementos.*/
+    box-shadow: 0px 0px 2px #7f7e7e;
+}
+
+.tituloProducto{
+    /*Damos un tamaño a la fuente de 26px*/
+    font-size: var(--fuente2_5);
+}
+
+.descripcion1{
+    /*Damos un tamaño a la fuente de 18px*/
+    font-size: 18px;
+}
+
+/*Vamos a darle una alineación hacia el centro a nuestro image_Content, la cual se aloja dentor de nuestro contedor*/
+.image_Content{
+    /*Con text-align, hacemos que nuestro texto (o imagen en este caso). Se alinie a un lado de nuestro contedor. En 
+    este caso que se alinie al centro del contenedor*/
+    text-align: center;
+}
+
+.main_boton{
+    /*Establecemos el color de nuestro botón*/
+    background-color: var(--green-color);
+    /*Establecemos el ancho de mi elemento botón. Que sera´del 100% en este caso, ya que queremos que nuestro botón ocupe
+    todo el ancho dentro de nuestro contenedor*/
+    width: 100%;
+    /*Damos un espaciado interno en nuestro botón de 10px*/
+    padding: var(--space-interno1);
+    /*El font-size, nos sirve para establecer el tamaño que va a tenr nuestro texto*/
+    font-size: var(--fuente2);
+    /*Definimos el color de texto que esta dentro de nuestro botón*/
+    color: var(--white-color);
+    /*Con border, decidimos el borde que va a tener nuestro elemento (un botón en este caso), para este ejemplo,
+    no queremos que nuestro botón tenga bordes, así que le ponemos 0*/
+    border: 0;
+    /*La propiedad cursor: específica el cursor del mouse que se mostrará al apuntar sobre un elemento*/
+    cursor: pointer;
+}
+
+/*La pseudo clase :hover se usa para crear efectos cuando pasamos el puntero encima de nuestros enlaces o botones*/
+.main_boton:hover{
+    /*Color que le daremos a nuestro botón, cuando el apuntador del mouse pase sobre el*/
+    background-color: #5ca01c;
+}
+
+
+/*---------------------Descripción de producto*/
+
+
+.section_Producto{
+    /*Damos el tamaño a nuestra fuente de 28px*/
+    font-size: var(--fuente2_8);
+    /*Hacemos que nuestro texto quede alineado al cento de nuestra pantalla*/
+    text-align: center;
+    /*Damos un espaciado interno de 20px a nuestro elemento*/
+    padding: var(--space-interno2);
+}
+.descripcionContenidos{
+    /*Hacemos que nuestro texto quede alineado al centro de nuestra pantalla*/
+    text-align: center;
+    /*flex: Me ayuda a pasar mis elementos de forma vertical a horizontal, para el caso de mis tarjetas*/
+    display: flex;
+    /*Sirve para que la imagen ocupe el tamaño  del div que tiene*/
+    background-size: cover;
+    /*Modificamos la posición de nuestra imagen, hacía el centro y arriba*/
+    background-position: center top;
+}
+
+.descripcionContenido{
+    /*Le damos un espaciado interno de 10px a nuestra sección producto para que se diferencia de nuestras tarjetas*/
+    padding: var(--space-interno1);
+    /*Damos un espaciado externo a nuestros elementos, que estam dentro de la sección descripcionContenido de 20px*/
+    margin: var(--space-externo1);
+}
+.descripcionContenido .content2{
+    /*Con text-align, hacemos que nuestro texto (o imagen en este caso). Se alinie a un lado de nuestro contedor. En 
+    este caso que se alinie al centro del contenedor*/
+    text-align: center;
+}
+
+.tituloDescripcion{
+    /*Damos un tamaño a la fuente de 35px*/
+    font-size: var(--fuente2_5);
+}
+
+.descripcion2{
+    /*Damos un tamaño a la fuente de 20px*/
+    font-size: var(--fuente2);
+}
+
+
+/*--------------------------Comentario Clientes*/
+
+.section_comentarios{
+    font-size: var(--fuente2_8);
+    /*Hacemos que nuestro texto quede alineado al cento de nuestra pantalla*/
+    text-align: center;
+    /*Damos un espaciado interno de 20px a nuestro elemento*/
+    padding: var(--space-interno2);
+}
+.comentarios{
+    /*Hacemos que nuestro texto quede alineado al centro de nuestra pantalla*/
+    text-align: center;
+    /*flex: Me ayuda a pasar mis elementos de forma vertical a horizontal, para el caso de mis tarjetas*/
+    display: flex;
+    /*Sirve para que la imagen ocupe el tamaño  del div que tiene*/
+    background-size: cover;
+    /*Modificamos la posición de nuestra imagen, hacía el centro y arriba*/
+    background-position: center top;
+}
+
+.comentario{
+    /*Le damos un espaciado interno de 10px a nuestra sección producto para que se diferencia de nuestras tarjetas*/
+    padding: var(--space-interno1);
+    /*Damos un espaciado externo a nuestros elementos, que estam dentro de la sección descripcionContenido de 20px*/
+    margin: var(--space-externo1);
+}
+.comentario .content3{
+    /*Con text-align, hacemos que nuestro texto (o imagen en este caso). Se alinie a un lado de nuestro contedor. En 
+    este caso que se alinie al centro del contenedor*/
+    text-align: center;
+}
+
+.tituloCliente{
+    /*Damos un tamaño a la fuente de 35px*/
+    font-size: var(--fuente2_5);
+}
+
+.descripcion3{
+    /*Damos un tamaño a la fuente de 20px*/
+    font-size: var(--fuente2);
+}
+
+
+/*------------------------------Footer*/
+
+
+.apartadoFinal{
+    /*flex: Me ayuda a pasar mis elementos de forma vertical a horizontal*/
+    display: flex;
+    /*Damos el espaciado de 10px hacia dentro de todo lo que este dentro de nuestro navbar*/
+    padding: var(--space-interno1);
+    /*Sirve para darle el color de fondo a mi footer*/
+    background-color: var(--green-color);
+    /*Darle color a nuestro texto dentro del footer*/
+    color: var(--black-color);
+    /*Sirve para separar mis elementos dentro de mi footer*/  
+    justify-content: space-between;
+     /*Sirve para alinear hacia el centro nuestros elementos de forma vertical*/
+    align-items: center;
+}
+
+.apartadoFinal ul{
+    /*flex: Me ayuda a pasar mis elementos de forma vertical a horizontal*/
+    display: flex;
+}
+
+.apartadoFinal li{
+    /*Damos el espaciado de 20px hacia dentro de todo lo que este dentro de nuestro navbar*/
+    padding-left: var(--space-interno2);
+    /*Establece un marcador para los elementos de la lista, sin hacer que dejen de ser una lista. En este caso, me va a 
+    quitar los puntos que pone por defecto al crear la lista*/
+    list-style: none;
+}
+
+.apartadoFinal li a{
+    /*Darle color a nuestro texto dentro del footer*/
+    color: var(--black-color);
+    /*Se utiliza con los enlaces, y sirve para ocultar el subrayado que muestran por defecto los enlaces*/
+    text-decoration: none;
+}
+
+.apartadoFinal li a:hover{
+    /*Darle color a nuestro texto dentro del footer*/
+    color: var(--white-color);
+}
+
+
+/*---------------------- producto.html*/
+
+
+.row{
+    /*Genero un espaciado externo de 30px a la derecha y 10px hacia arriba en mi elemento row, el cual se encarga de contener mis grid*/
+    margin: 30px 10px;
+    /*Damos un espaciado interno de 10px a mi elemento row*/
+    padding: var(--space-interno1);
+}
+
+.parrafo{
+    /*Damos un tipo de fuente a nuestros parrafos, Segoe UI para este caso*/
+    font-family: 'Segoe UI';
+    /*Damos un tamaño a la letra de 20px*/
+    font-size: var(--fuente2);
+}
+
+
+/*---------------------venta.html*/
+
+
+.modulo_pago{
+    /*Damos un color de fondo a nuestro contenedor modulo_pago de color blanco*/
+    background-color: var(--white-color);
+    /*Proyectamos una sombra difuminada, dandole un espaciado de 4px a la derecha y 2px hacia abajo, con un tono de blanco más oscuro al color de fondo*/
+    box-shadow: 4px 2px #e6e5e9;
+    /*Damos un espaciado interno de 10px*/
+    padding: var(--space-interno1);
+}
+
+.modulo_pago_images{
+    /*Definimos el ancho máximo que un elemento puede llegar a tener, en este nuestra imagen tendrá un ancho máximo de 200px*/
+    max-width: 200px;
+    /*Centramos nuestra imagen al centro de nuestro contenedor*/
+    text-align: center;
+    /*Establecemos el ancho de mi elemento images. Que será del 100% en este caso, ya que queremos que nuestro images ocupe
+    todo el ancho dentro de nuestro contenedor*/
+    width: 100%;
+    /*Creamos un espaciado externo o margen, que calculará automáticamente el navegador*/
+    margin: auto;
+}
+
+.data{
+    /*Dams un espaciado externo de 10px hacia arriba*/
+    margin-top: var(--space-externo1);
+   /*Establecemos el ancho de mi elemento input. Que será del 100% en este caso, ya que queremos que nuestro input ocupe
+    todo el ancho dentro de nuestro contenedor*/
+    width: 100%;
+    /*Establecemos la altura que tendra un elemento*/
+    height: 35px;
+    /*Sirve para darle a las esquinas de mi elemento un borde circular de 2px, para este caso*/
+    border-radius: 2px;
+    /*establecemos el tipo de borde que se va a mostrar, dando un borde de 1px solido, de color negro*/
+    border: 1px solid var(--black-color);
+    /*Con box-sizing, calculamos cual va a ser el ancho y el alto total de un elemento que esta dentro del contenedor o elemento padre
+    y junto con el border-box, damos el estilo predeterminado que dan los navegadores a elementos como <table>, <select> y <button>*/
+    box-sizing: border-box;
+}
+
+/*Encerramos el elemento .main_boton dentro del elemento .modulo_pago. Con esto, lo que le estamos diciendo a nuestro CSS es que va a aefectuar cambios
+de diseño sobre todos los elementos main_boton, que estén dentro de la clase modulo_pago (Esto nos ayuda cuando tenemos vrias clases declaradas con el mismo
+nombre en diferentes partes de nuestro código HTML, pero solo queremos aplicar cambios en un solo elemento, sin afectar los demás element que tengan el mismo
+nombre (main_boton) para nuestro ejemplo*/
+.modulo_pago .main_boton{
+    margin-top: var(--space-externo1);
+}
+
+
+/*-----------------------------Condiciones*/
+
+
+.condiciones_de_uso{
+    /*Damos un espaciado externo o margen de 10px*/
+    margin: var(--space-externo1);
+    /*Damos un espaciado interno de 10px*/
+    padding: var(--space-interno1);
+    /*Alineamos nuestro texto al centro de nuestro contenedor*/
+    text-align: center;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+    <link rel="stylesheet" href="CSS/animacion.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--El navbar es una sección que contiene los enlaces de navegación-->
+    <nav class="fadeInDown">
+        <!--No poner ñ ni acentos, esto puede generar error en nuestras clases
+        la clase="brand_image" es un grupo, todas las modificaciones que hagamos se haran en grupo, por eso,
+        al aplicar el jusstify-content: space-between en nuestra hoja de estilos, nos va a modificar nuestros elementos en grupo y no uno por uno-->
+        <div class="brand_image">
+            <img src="Images/BrandQub (2).png" alt="">
+        </div>
+
+        <!--la clase="nav_option" es un grupo, todas las modificaciones que hafamos se haran en grupo, por eso,
+        al a    plicar el jusstify-content: space-between en nuestra hoja de estilos, nos va a modificar nuestros elementos en grupo y no uno por uno-->
+        <div class="nav_option">
+            <!--ul y li son un formato lista
+            -->
+            <ul>
+                <!--Creamos un link dentro de nuestras listas. Esto se hace para que nuestra lista sea o mas parecido a un boton
+                con eso, cuando demos clic en nuestras listas, nos direccione hacia donde nosotros le hayamos indicado-->
+                <li><a href="#">Faqs</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Aquí termina el navbar-->
+
+    <br><br><br><br><br><br><br>
+     <div class="contenedor">
+        <div class="row">
+            <!--Las grillas (o columnas) cuando las seleccione dentro de mi row, tiene que sumar 12 (ya que es el número de columnas que use para
+                crear mi sistema de grillas), ejemplo, col-4 + col-8 = col-12-->
+            <div class="col-4">
+                <div class="modulo_pago">
+                    <!--Es buena práctica meter mis imagenes dentro de un contenedor, (un div paa este caso), así a la hora de querer hacer modificaciones a la imagen
+                    o acomodarla con otros elementos, lo podamos hacer sin tanto que genere problemas de espaciado, saltos de línea, etc-->
+                    <div class="modulo_pago_images">
+                        <img src="Images/index/Cubo1 (2).png" alt="">
+                    </div>
+                    <h3>
+                        Producto 1
+                    </h3>
+                    <p>
+                        Este es un producto hecho en fibra de carbono, qué esperas para comprarlo.
+                    </p>
+                </div>
+            </div>
+
+            <!--Las grillas (o columnas) cuando las seleccione dentro de mi row, tiene que sumar 12 (ya que es el número de columnas que use para
+                crear mi sistema de grillas), ejemplo, col-4 + col-8 = col-12-->
+            <div class="col-8">
+                <div class="modulo_pago">
+                    <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9WBL5UUALV9J2" method="POST">
+                        <!--Un label representa una etiqueta para un elemento en una interfaz de usuario. Cabe recalcar que el atributo for debe ser igual
+                        (tener el mismo nombre) al atributo id, del elemento que se esta relacionando para poderlos enlazar-->
+                        <label for="name">Nombre</label>
+                        <br>
+                        <input type="text" placeholder="" id="name" class="data">
+                        <br>
+
+                        <label for="email">E-mail</label>
+                        <br>
+                        <input type="text" placeholder="" id="email" class="data">
+                        <br>
+                        
+                        <label for="phone">Telefono</label>
+                        <br>
+                        <input type="text" placeholder="" id="phone" class="data">
+
+                        <!--Es buena de buena práctica darle nombre a todos los inputs
+                        Con el elemento value, lo que hacemos es modificar el nombre dentro de nuestro botón-->
+                        <input type="submit" class="main_boton" name="submit" value="Confirmar pago">
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+     <br><br><br><br><br><br><br><br>
+
+    <!--Aquí empieza el footer-->
+    <footer class="apartadoFinal">
+        <div class="condiciones">
+            <ul>
+                <li><a href="#">Terminos y condiciones</a></li>
+            </ul>
+        </div>
+        
+        <div class="contactos">
+            <ul>
+                <li><a href="#">+57 315 588 8554</a></li>
+                <li><a href="#">sebasdiaz19@gmail.com</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--Aquí termina el footer-->
+</body>
+</html>

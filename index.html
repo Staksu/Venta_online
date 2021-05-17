@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+    <link rel="stylesheet" href="CSS/animacion.css">
+    <script src="Scripts/Script.js"></script>
+    <title>BrandQub</title>
+</head>
+<body>
+    <!--El navbar es una sección que contiene los enlaces de navegación-->
+    <nav class="fadeInDown">
+        <!--No poner ñ ni acentos, esto puede generar error en nuestras clases
+        la clase="brand_image" es un grupo, todas las modificaciones que hagamos se haran en grupo, por eso,
+        al aplicar el jusstify-content: space-between en nuestra hoja de estilos, nos va a modificar nuestros elementos en grupo y no uno por uno-->
+        <div class="brand_image">
+            <img src="Images/BrandQub (2).png" alt="">
+        </div>
+
+        <!--la clase="nav_option" es un grupo, todas las modificaciones que hafamos se haran en grupo, por eso,
+        al a    plicar el jusstify-content: space-between en nuestra hoja de estilos, nos va a modificar nuestros elementos en grupo y no uno por uno-->
+        <div class="nav_option">
+            <!--ul y li son un formato lista
+            -->
+            <ul>
+                <!--Creamos un link dentro de nuestras listas. Esto se hace para que nuestra lista sea o mas parecido a un boton
+                con eso, cuando demos clic en nuestras listas, nos direccione hacia donde nosotros le hayamos indicado-->
+                <li><a href="">Faqs</a></li>
+                <li><a href="producto.html">Producto / descripción</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Aquí termina el navbar-->
+
+    <!--Creamos el main_section donde agregaremos todo el contenido de nuestra página web-->
+    <div class="main_section fadeIn">
+        <h1>
+            Este es un producto increíble, no sé que haces viendo
+            que lo puedes tener
+        </h1>
+    </div>
+    <!--Aquí termina el main_section-->
+    
+    <!--Creamos la sección de Productos-->
+    <div class="productos fadeInUp">
+        <!--Creamos la función producto y dentro de la función producto creamos el content-->
+        <div class="producto">
+            <!--Creación del content-->
+            <div class="content">
+                <div class="image_Content">
+                    <!--Aquí estará alojada la imagen de nuestro producto-->
+                    <img src="Images/index/Cubo1 (2).png" alt="">
+                </div>
+                <!--Dentro de content creamos nuestras dos tarjetas. Esto es para que nuestros elementos creados (Las tarjetas para nuestro ejerciico)
+                se superponga al fondo dentro de la sección productos y no quede encima de esta
+                Por último, añadimos el contenido que va a ir dentro de nuestras tarjetas-->
+                <h1 class="tituloProducto">Producto 1</h1>
+                <p class="descripcion1"> Miles de productos puedes encontrar, pero nada como estos cubos de fibra de carbono</p>
+                <form action="venta.html">
+                    <button class="main_boton">Lo quiero</a>
+                </form>
+            </div>
+        </div>
+        <div class="producto">
+            <div class="content">
+                <div class="image_Content">
+                    <!--Aquí estará alojada la imagen de nuestro producto-->
+                    <img src="Images/index/Cubo2 (2).png" alt="">
+                </div>
+                <!--Aquí añadimos el contenido que va dentro de nuestras tarjetas-->
+                <h1 class="tituloProducto">Producto 1</h1>
+                <p class="descripcion1">Miles de productos puedes encontrar, pero nada como estos cubos de fibra de carbono</p>
+                <form action="venta.html">
+                    <button class="main_boton">Lo quiero</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Aquí termina la sección de Productos-->
+
+    <!--Creamos el section_Producto donde agregaremos los productos a ofrecer de nuestra página web-->
+    <div class="section_Producto">
+        <h1>Nuestro Contenido</h1>
+    </div>
+    <!--Aquí termina el section_Producto-->
+
+    <!--Aquí esta el código donde descripcionContenidos-->
+    <div class="descripcionContenidos">
+        <!--Creamos la función producto y dentro de la función producto creamos el content-->
+        <div class="descripcionContenido">
+            <!--Creación del content-->
+            <div class="content2">
+                <!--Aquí estará contenida la imagen que ira en el apartado de nuestro contenido-->
+                <div class="image_Content2">
+                    <img src="Images/index/Rubik2 (2).png" alt="">
+                </div>
+                <!--Aquí va escrito la descripción de nuestro producto-->
+                <h2 class="tituloDescripcion">Desarrolla habilidades nuevas</h2>
+                <p class="descripcion2">Este es un producto hecho en fibra de carbono, qué esperas para comprarlo.</p>
+            </div>
+        </div>
+
+        <div class="descripcionContenido">
+            <div class="content2">
+                <!--Aquí estará contenida la imagen que ira en el apartado de nuestro contenido-->
+                <div class="image_Content2">
+                    <img src="Images/index/Rubik1 (2).png" alt="">
+                </div>
+                <!--Aquí va escrito la descripción de nuestro producto-->
+                <h2 class="tituloDescripcion" >Fácil de girar</h2>
+                <p class="descripcion2">Este es un producto hecho en fibra de carbono, qué esperas para comprarlo.</p>
+            </div>
+        </div>
+
+        <div class="descripcionContenido">
+            <div class="content2">
+                <!--Aquí estará contenida la imagen que ira en el apartado de nuestro contenido-->
+                <div class="image_Content2">
+                    <img src="Images/index/Rubik2 (2).png" alt="">
+                </div>
+                <!--Aquí va escrito la descripción de nuestro producto-->
+                <h2 class="tituloDescripcion">Lógica más desarrollada</h2>
+                <p class="descripcion2">Este es un producto hecho en fibra de carbono, qué esperas para comprarlo.</p>
+            </div>
+        </div>
+    </div>
+    <!--Aquí finaliza el seccion de descripcionContenidos-->
+
+    <!--Creamos el section_comentarios donde agregaremos todos los comentarios de nuestros clientes de nuestra página web-->
+    <div class="section_comentarios">
+        <h1>Menciones</h1>
+    </div>
+    <!--Aquí termina el section_comentarios-->
+
+    <!--Aquí esta el código donde ira el apartado de los comentarios-->
+    <div class="comentarios">
+        <!--Creamos la función comentario y dentro de la función pcomentario creamos el content3-->
+        <div class="comentario">
+            <!--Creación del content3-->
+            <div class="content3">
+                <!--Aquí estará cotenida la imagen que ira la imagen de perfil, de las personas que comenten-->
+                <div class="image_Content3">
+                    <img src="Images/index/Cesar.png" alt="">
+                </div>
+                <!--Aquí va escrito los comentarios de nuestros clientes-->
+                <h2 class="tituloCliente">Cesar Ochoa</h2>
+                <p class="descripcion3">Este es un producto hecho en fibra de carbono, qué esperas para comprarlo.</p>
+            </div>
+        </div>
+
+        <!--Creamos la función comentario y dentro de la función pcomentario creamos el content3-->
+        <div class="comentario">
+            <!--Creación del content3-->
+            <div class="content3">
+                <!--Aquí estará cotenida la imagen de perfil, de las personas que comenten-->
+                <div class="image_Content3">
+                    <img src="Images/index/Claudia.png" alt="">
+                </div>
+                <!--Aquí va escrito los comentarios de nuestros clientes-->
+                <h2 class="tituloCliente">Claudia Bustamante</h2>
+                <p class="descripcion3">Este es un producto hecho en fibra de carbono, qué esperas para comprarlo.</p>
+            </div>
+        </div>
+
+        <!--Creamos la función comentario y dentro de la función pcomentario creamos el content3-->
+        <div class="comentario">
+            <!--Creación del content3-->
+            <div class="content3">
+                <!--Aquí estará cotenida la imagen de perfil, de las personas que comenten-->
+                <div class="image_Content3">
+                    <img src="Images/index/Sara.png   " alt="">
+                </div>
+                <!--Aquí va escrito los comentarios de nuestros clientes-->
+                <h2 class="tituloCliente">Sara Sofia</h2>
+                <p class="descripcion3">Este es un producto hecho en fibra de carbono, qué esperas para comprarlo.</p>
+            </div>
+        </div>
+
+        <!--Creamos la función comentario y dentro de la función pcomentario creamos el content3-->
+        <div class="comentario">
+            <!--Creación del content3-->
+            <div class="content3">
+                <!--Aquí estará cotenida la imagen de perfil, de las personas que comenten-->
+                <div class="image_Content3">
+                    <img src="Images/index/Juan.png" alt="">
+                </div>
+                <!--Aquí va escrito los comentarios de nuestros clientes-->
+                <h2 class="tituloCliente">Juan López</h2>
+                <p class="descripcion3">Este es un producto hecho en fibra de carbono, qué esperas para comprarlo.</p>
+            </div>
+        </div>
+    </div>
+    <!--Aquí termina el apartado del código de los comentarios-->
+
+    <!--Aquí empieza el footer-->
+    <footer class="apartadoFinal">
+        <div class="condiciones">
+            <ul>
+                <li><a href="condiciones.html">Terminos y condiciones</a></li>
+            </ul>
+        </div>
+        
+        <div class="contactos">
+            <ul>
+                <li><a href="">+57 315 588 8554</a></li>
+                <li><a href="mailto:sebasdiaz19@gmail.com">sebasdiaz19@gmail.com</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--Aquí termina el footer-->
+</body>
+</html>

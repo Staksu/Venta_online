@@ -1,0 +1,82 @@
+
+:root{
+    --col-width: 8.333333333333333%;
+}
+
+/*Un container siempre va a delimitar su ancho.*/
+.contenedor{
+    /*Con max-width, establecemos el ancho máximo de un elemento.*/
+    max-width: 900px;
+    /*Con margin: auto, hacemos que el navegador calcule el margen*/
+    margin: auto;
+}
+
+/*Es el que se encarga de llevar las columnas creadas, de forma horizontal*/
+.row{
+    display: flex;
+}
+
+.col-1{
+    /*Definimos el tamaño de nuestras columnas con width en % (Dividimos el 100% de anchura de nuestro container por 12, y esos
+    serán los valores que se van a agregar en cada una de nuestras columnas
+    width especifica la anchura del área de contenido de un elemento y su ancho, no puede ser mayor al max-width especificado*/
+    width: var(--col-width);
+}
+
+.col-2{
+    width: calc(var(--col-width) * 2);
+}
+
+.col-3{
+    width: calc(var(--col-width) * 3);
+}
+
+.col-4{
+    width: calc(var(--col-width) * 4);
+}
+
+.col-5{
+    width: calc(var(--col-width) * 5);
+}
+
+.col-6{
+    width: calc(var(--col-width) * 6);
+}
+
+.col-7{
+    width: calc(var(--col-width) * 7);
+}
+
+.col-8{
+    width: calc(var(--col-width) * 8);
+}
+
+.col-9{
+    width: calc(var(--col-width) * 9);
+}
+
+.col-10{
+    width: calc(var(--col-width) * 10);
+}
+
+.col-11{
+    width: calc(var(--col-width) * 11);
+}
+
+.col-12{
+    width: calc(var(--col-width) * 12);
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+    padding: 10px;
+}
+
+@media(max-width: 900px){
+    .row{
+        display: inherit;
+    }
+    
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+        width: 100%;
+    }
+}

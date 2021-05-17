@@ -1,0 +1,28 @@
+
+/*Sirve para modificar mi página web o aplicación en función del tipo de dispositivo, 
+características y parámetros específicos*/
+@media (max-width: 600px){
+    .productos{
+        /*Con display: inherit especificamos que una propiedad debe heredar su valor de su elemento 
+        primario o elemento padre*/
+        display: inherit;
+        /*Ajusta la altura de la sección o elemento productos automáticamente*/
+        height: auto;
+    }
+
+    .producto{
+        /*El marigin-top: auto, establece el margen superior de un elemento de forma automática*/
+        margin-top: auto;
+    }
+
+    .main_section{
+        /*Establece un espaciado interno del elemento o sección main_section de 4%*/
+        padding: 4%;
+    }
+
+    .descripcionContenidos, .comentarios{
+        /*Con display: inherit especificamos que una propiedad debe heredar su valor de su elemento 
+        primario o elemento padre*/
+        display: inherit;
+    }
+}

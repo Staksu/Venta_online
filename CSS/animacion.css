@@ -1,0 +1,82 @@
+
+/*Esta es la clase*/
+.fadeIn{
+    -webkit-animation-duration: 4s;
+    /*Con animation-duration, especificamos la duración de nuestra animación, expresada en Segundos 's'*/
+    animation-duration: 4s;
+    /*Establece los valores que se aplican a la animación antes y después de que se esté ejecutando*/
+    animation-fill-mode: both;
+    /*El prefijo -webkit- es el que utilizan navegadores basados en Chromium (como Chrome y Safari)*/
+    -webkit-animation-fill-mode: fadeIn;
+    -webkit-animation-name: fadeIn;
+    /*animation-name, es el nombre que damos a nuestro keyframes, en este caso es fadeIn*/
+    animation-name: fadeIn;
+}
+
+/*Este es un keyframes*/
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+/*Esta es la clase*/
+.fadeInDown{
+    -webkit-animation-duration: 1s;
+    /*Con animation-duration, especificamos la duración de nuestra animación, expresada en Segundos 's'*/
+    animation-duration: 1s;
+    /*Establece los valores que se aplican a la animación antes y después de que se esté ejecutando*/
+    animation-fill-mode: both;
+    /*El prefijo -webkit- es el que utilizan navegadores basados en Chromium (como Chrome y Safari)*/
+    -webkit-animation-fill-mode: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    /*animation-name, es el nombre que damos a nuestro keyframes, en este caso es fadeInDown*/
+    animation-name: fadeInDown;
+}
+
+/*Este es un keyframes*/
+@keyframes fadeInDown{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to{
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+/*Esta es la clase*/
+.fadeInUp{
+    -webkit-animation-duration: 1s;
+    /*Con animation-duration, especificamos la duración de nuestra animación, expresada en Segundos 's'*/
+    animation-duration: 1s;
+    /*Establece los valores que se aplican a la animación antes y después de que se esté ejecutando*/
+    animation-fill-mode: both;
+    /*El prefijo -webkit- es el que utilizan navegadores basados en Chromium (como Chrome y Safari)*/
+    -webkit-animation-fill-mode: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    /*animation-name, es el nombre que damos a nuestro keyframes, en este caso es fadeInUp*/
+    animation-name: fadeInUp;
+}
+
+/*Este es un keyframes*/
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to{
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
